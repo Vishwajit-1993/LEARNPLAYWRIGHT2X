@@ -48,6 +48,20 @@ LearnPlaywright2X/
 │   ├── 07_Identifier_Rules_2.js   # Valid identifier cases (camelCase, snake_case, etc.)
 │   └── 08_comments.js             # Comment styles and IDE shortcuts
 │
+├── chapter_04_javascript_concepts/
+│   ├── 09_javascript_variables.js # var, let, const — redeclaration & reassignment
+│   ├── 10_function.js               # Function definition, calling, and benefits
+│   ├── 11_var.js                    # var — global and function scope
+│   ├── 12_let.js                    # let — reassignment and block scope
+│   ├── 13_const.js                  # const — immutability (no reassignment/redeclaration)
+│   ├── 14_var_functionscope.js      # var is function-scoped
+│   ├── 15_let_blockscope.js         # let is block-scoped
+│   ├── 16_hoisting.js               # var declaration hoisting
+│   └── 17_hoisting_fn.js            # Function declaration hoisting
+│
+├── chapter_11_Arrays/
+│   └── 83_Arrays.js                 # Array basics — creation, length, and index access
+│
 └── README.md
 ```
 
@@ -117,6 +131,26 @@ Deep dive into naming and documentation:
 - **`07_Identifier_Rules_2.js`** — Valid case styles: `camelCase`, `PascalCase`, `snake_case`, `SCREAMING_SNAKE_CASE`, `_underscorePrefix`, `$prefix`
 - **`08_comments.js`** — Single-line, multi-line, JSDoc comments + Cursor/VS Code shortcuts
 
+### Chapter 04 — Variables, Functions, Scope & Hoisting
+
+Deep dive into how JavaScript handles variables and functions:
+
+- **`09_javascript_variables.js`** — `var`, `let`, and `const`; redeclaration vs reassignment; loop counter leakage
+- **`10_function.js`** — Function definition and calling; why functions matter (reuse, readability, maintainability)
+- **`11_var.js`** — `var` in global and function scope
+- **`12_let.js`** — `let` reassignment and block scope
+- **`13_const.js`** — `const` immutability (no reassignment or redeclaration)
+- **`14_var_functionscope.js`** — `var` is function-scoped (accessible throughout the function)
+- **`15_let_blockscope.js`** — `let` is block-scoped (not accessible outside the block)
+- **`16_hoisting.js`** — `var` declarations are hoisted with `undefined` value
+- **`17_hoisting_fn.js`** — Function declarations are hoisted to the top of their scope
+
+### Chapter 11 — Arrays
+
+Introduction to JavaScript arrays:
+
+- **`83_Arrays.js`** — Creating arrays, array length, and zero-based index access
+
 ---
 
 ## How to Run the Examples
@@ -127,6 +161,9 @@ Each `.js` file can be run directly with Node.js:
 node chapter_01_Basics/01_Basics.js
 node chapter_01_Basics/03_js_commands.js
 node chapter_02_Javascript_Concepts/05_JS_Basics.js
+node chapter_04_javascript_concepts/09_javascript_variables.js
+node chapter_04_javascript_concepts/16_hoisting.js
+node chapter_11_Arrays/83_Arrays.js
 ```
 
 ---
@@ -152,18 +189,19 @@ Cursor IDE is built on top of VS Code, so VS Code shortcuts work the same way.
 - [x] Chapter 01 — JavaScript Basics
 - [x] Chapter 02 — JavaScript Concepts (Keywords, Identifiers, Literals)
 - [x] Chapter 03 — Identifier Rules, Cases, and Comments
-- [ ] Chapter 04 — Data Types and Type Conversion
-- [ ] Chapter 05 — Operators and Expressions
-- [ ] Chapter 06 — Control Flow (if/else, switch, loops)
-- [ ] Chapter 07 — Functions and Scope
-- [ ] Chapter 08 — Arrays and Objects
-- [ ] Chapter 09 — ES6+ Features (arrow functions, destructuring, spread/rest)
+- [x] Chapter 04 — Variables (var, let, const), Functions, Scope & Hoisting
+- [ ] Chapter 05 — Data Types and Type Conversion
+- [ ] Chapter 06 — Operators and Expressions
+- [ ] Chapter 07 — Control Flow (if/else, switch, loops)
+- [ ] Chapter 08 — Advanced Functions and Closures
+- [x] Chapter 11 — Arrays (Basics)
+- [ ] Chapter 09 — Objects and ES6+ Features (arrow functions, destructuring, spread/rest)
 - [ ] Chapter 10 — Async JavaScript (Promises, async/await)
-- [ ] Chapter 11 — Playwright Setup and First Test
-- [ ] Chapter 12 — Locators and Actions
-- [ ] Chapter 13 — Assertions and Test Hooks
-- [ ] Chapter 14 — Page Object Model (POM)
-- [ ] Chapter 15 — CI/CD Integration
+- [ ] Chapter 12 — Playwright Setup and First Test
+- [ ] Chapter 13 — Locators and Actions
+- [ ] Chapter 14 — Assertions and Test Hooks
+- [ ] Chapter 15 — Page Object Model (POM)
+- [ ] Chapter 16 — CI/CD Integration
 
 ---
 
