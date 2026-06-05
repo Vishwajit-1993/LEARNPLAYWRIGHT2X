@@ -11,6 +11,7 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 - [Prerequisites](#prerequisites)
 - [Getting Started](#getting-started)
 - [Chapters Overview](#chapters-overview)
+- [Practice Tasks (All_Task)](#practice-tasks-all_task)
 - [How to Run the Examples](#how-to-run-the-examples)
 - [Git Workflow](#git-workflow)
 - [Useful Shortcuts](#useful-shortcuts)
@@ -24,8 +25,8 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow)
-- Modern ES6+ features
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays)
+- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions)
 - Playwright automation framework for end-to-end testing of web applications
 
 Each chapter is organized into its own folder with progressively numbered files for easy navigation.
@@ -51,81 +52,59 @@ LearnPlaywright2X/
 │   └── 08_comments.js
 │
 ├── chapter_04_javascript_concepts/
-│   ├── 09_javascript_variables.js
-│   ├── 10_function.js
-│   ├── 11_var.js
-│   ├── 12_let.js
-│   ├── 13_const.js
-│   ├── 14_var_functionscope.js
-│   ├── 15_let_blockscope.js
-│   ├── 16_hoisting.js
-│   ├── 17_hoisting_fn.js
-│   ├── 18_let_hoisting.js
-│   ├── 19_let_hoisting_block.js
-│   ├── 20_const_hoisting.js
-│   └── 21_jr_QA.js
+│   ├── 09_javascript_variables.js … 21_jr_QA.js
 │
 ├── chapter_05_Literal/
-│   ├── 22_Literal.js
-│   ├── 23_null_undefined.js
-│   ├── 24_null.js
-│   ├── 25_Literal_All.js
-│   ├── 26_All_Numbers.js
-│   ├── 27_string.js
-│   ├── 28_Template_Literal.js
-│   └── 29_backtick_single_double_quote.js
+│   ├── 22_Literal.js … 29_backtick_single_double_quote.js
 │
 ├── chapter_06_Operator/
-│   ├── 30_Operator.js
-│   ├── 31_ArithmaticOperator.js
-│   ├── 32_ModulusOper.js
-│   ├── 33_ExponentialOper.js
-│   ├── 34_IQ.js
-│   ├── 35_ComparisonOperator.js
-│   ├── 36_ComparisonOpr.js
-│   ├── 37_loose_strict.js
-│   ├── 38_confusing_comparison.js
-│   ├── 39_LogialOper.js
-│   ├── 40_string_concat.js
-│   ├── 41_TerneryOpr.js
-│   ├── 42_TypeOf.js
-│   ├── 43_Inc_Dec_Op.js
-│   ├── 44_Assignment_onternary.js
-│   ├── 45_null.js
-│   └── 46_advinc.js
+│   ├── 30_Operator.js … 46_advinc.js
 │
 ├── chapter_07_Statement/
-│   ├── 48_If_Else.js
-│   ├── 49_If_Else_ElseIf.js
-│   ├── 50_Real_IFElse.js
-│   ├── 51_API_If_Else.js
-│   ├── 52_IQ.js
-│   ├── 53_Real1_If_Else.js
-│   ├── 54_IQ.js
-│   ├── 55_IfElse.js
-│   ├── 56_EvenOdd.js
-│   ├── 57_GradeCalculator.js
-│   └── 58_LeapYear.js
+│   ├── 48_If_Else.js … 58_LeapYear.js
 │
 ├── chapter_08_SwitchStatement/
-│   ├── 59_switch.js
-│   ├── 60_NoBreak.js
-│   ├── 61_real_time_example.js
-│   ├── 62_switch_group.js
-│   ├── 63_IQ1.js
-│   ├── 64_IQ2.js
-│   ├── 65_IQ3.js
-│   └── 66_IQ4.js
+│   ├── 59_switch.js … 66_IQ4.js
 │
 ├── chapter_09_UserInput/
 │   ├── 68_UserInput.js
 │   ├── 69_Node_UserNnput.js
 │   └── 70_PromptSync.js
 │
-├── chapter_11_Arrays/
-│   └── 83_Arrays.js
+├── chapter_10_Loops/
+│   ├── 71_Loop.js
+│   ├── 72_ForLoop1.js
+│   ├── 73_IQ.js
+│   ├── 74_For_Of_IN_Each.js
+│   ├── 76_whileloop.js
+│   ├── 77_dowhileloop.js
+│   ├── 78_dowhile1.js
+│   ├── 79_IQ.js
+│   ├── 80_IQ1.js
+│   ├── 81_IQ.js
+│   └── 82_IQ.js
 │
-├── git.md                           # Branch, commit, push & merge workflow
+├── chapter_11_Arrays/
+│   ├── 83_Arrays.js
+│   ├── 84_Array.js
+│   ├── 85_Access_Array.js
+│   ├── 86_Add_Remove.js
+│   ├── 87_Add_Remove_2.js
+│   ├── 88_realex1.js
+│   ├── 89_searchInArray.js
+│   ├── 90_IterateArray.js
+│   └── 91_IQ.js
+│
+├── All_Task/
+│   ├── BugSeverityClassifier.js
+│   ├── BuildHealthReporter.js
+│   ├── FizzBuzz Test.js
+│   ├── HTTP Status Code Categorizer.js
+│   ├── Login Lockout.js
+│   ├── Test Case Pass/Fail Verdict.js
+│   └── Triangle _Classifier.js
+│
+├── git.md
 └── README.md
 ```
 
@@ -133,14 +112,12 @@ LearnPlaywright2X/
 
 ## Prerequisites
 
-Before running the examples in this repo, ensure you have the following installed:
-
 | Tool             | Version       | Download Link |
 |------------------|---------------|---------------|
 | Node.js          | v18 or higher | [nodejs.org](https://nodejs.org/) |
 | npm              | v9 or higher  | Comes bundled with Node.js |
 | Git              | Latest        | [git-scm.com](https://git-scm.com/) |
-| VS Code / Cursor | Latest        | [cursor.com](https://www.cursor.com/) / [code.visualstudio.com](https://code.visualstudio.com/) |
+| VS Code / Cursor | Latest        | [cursor.com](https://www.cursor.com/) |
 
 Verify installation:
 
@@ -273,9 +250,47 @@ npx playwright install
 - **`69_Node_UserNnput.js`** — Node.js `readline` (built-in, no install)
 - **`70_PromptSync.js`** — `prompt-sync` package (requires `npm install prompt-sync`)
 
+### Chapter 10 — Loops
+
+- **`71_Loop.js`** — Loops introduction (`for`, `while`, `do-while`)
+- **`72_ForLoop1.js`** — Basic `for` loop
+- **`73_IQ.js`** — Loop practice questions
+- **`74_For_Of_IN_Each.js`** — `for...of` / `for...in` (with arrays & objects)
+- **`76_whileloop.js`** — `while` loop
+- **`77_dowhileloop.js`** — `while` vs `do-while` difference
+- **`78_dowhile1.js`** — Additional do-while examples
+- **`79_IQ.js`** — Loop IQ questions
+- **`80_IQ1.js`** — Loop IQ practice
+- **`81_IQ.js`** — `for` loop + `continue` keyword
+- **`82_IQ.js`** — Infinite loop trap (missing `n++`)
+
 ### Chapter 11 — Arrays
 
-- **`83_Arrays.js`** — Array creation, length, and index access
+- **`83_Arrays.js`** — Array creation, length, zero-based index
+- **`84_Array.js`** — Array constructor, mixed types, nested arrays
+- **`85_Access_Array.js`** — Access and update elements by index
+- **`86_Add_Remove.js`** — `push`, `pop`, `shift`, `unshift`, `splice`
+- **`87_Add_Remove_2.js`** — More add/remove examples
+- **`88_realex1.js`** — Real-world array example
+- **`89_searchInArray.js`** — `indexOf`, `includes`, search in arrays
+- **`90_IterateArray.js`** — `for`, `for...of`, `forEach` iteration
+- **`91_IQ.js`** — `map`, `filter`, `reduce` on arrays
+
+---
+
+## Practice Tasks (All_Task)
+
+Real-world mini programs combining if/else, loops, and operators:
+
+| File | Topic |
+|------|-------|
+| **`BugSeverityClassifier.js`** | Classify bug severity by impact score (1–10) |
+| **`BuildHealthReporter.js`** | CI build health from test pass rate % |
+| **`FizzBuzz Test.js`** | Classic FizzBuzz (multiples of 3, 5, both) |
+| **`HTTP Status Code Categorizer.js`** | Categorize HTTP status codes (2xx, 3xx, 4xx, 5xx) |
+| **`Login Lockout.js`** | Login attempt / account lock logic |
+| **`Test Case Pass/Fail Verdict.js`** | Pass/fail verdict from expected vs actual |
+| **`Triangle _Classifier.js`** | Classify triangle type by sides |
 
 ---
 
@@ -284,13 +299,11 @@ npx playwright install
 Most files run with Node.js:
 
 ```bash
-node chapter_01_Basics/01_Basics.js
-node chapter_05_Literal/28_Template_Literal.js
 node chapter_06_Operator/38_confusing_comparison.js
 node chapter_07_Statement/58_LeapYear.js
 node chapter_08_SwitchStatement/59_switch.js
-node chapter_09_UserInput/69_Node_UserNnput.js
-node chapter_11_Arrays/83_Arrays.js
+node chapter_10_Loops/77_dowhileloop.js
+node chapter_11_Arrays/91_IQ.js
 ```
 
 **User input with prompt-sync:**
@@ -298,6 +311,14 @@ node chapter_11_Arrays/83_Arrays.js
 ```bash
 npm install prompt-sync
 node chapter_09_UserInput/70_PromptSync.js
+```
+
+**Practice tasks:**
+
+```bash
+node "All_Task/FizzBuzz Test.js"
+node "All_Task/BuildHealthReporter.js"
+node "All_Task/HTTP Status Code Categorizer.js"
 ```
 
 **Browser-only:**
@@ -316,7 +337,6 @@ Quick summary:
 git checkout main
 git pull origin main
 git checkout -b feature/your-branch-name
-# make changes, then:
 git add .
 git commit -m "Your message"
 git push -u origin feature/your-branch-name
@@ -327,14 +347,10 @@ git push -u origin feature/your-branch-name
 
 ## Useful Shortcuts
 
-Cursor IDE is built on top of VS Code, so VS Code shortcuts work the same way.
-
 | Action                     | Windows Shortcut     | Mac Shortcut           |
 |----------------------------|----------------------|------------------------|
 | Toggle Single Line Comment | `Ctrl + /`           | `Cmd + /`              |
 | Toggle Block Comment       | `Shift + Alt + A`    | `Shift + Option + A`   |
-| Add Line Comment           | `Ctrl + K, Ctrl + C` | `Cmd + K, Cmd + C`     |
-| Remove Line Comment        | `Ctrl + K, Ctrl + U` | `Cmd + K, Cmd + U`     |
 | Format Document            | `Shift + Alt + F`    | `Shift + Option + F`   |
 | Quick Open File            | `Ctrl + P`           | `Cmd + P`              |
 | Open Terminal              | `` Ctrl + ` ``       | `` Cmd + ` ``          |
@@ -352,8 +368,9 @@ Cursor IDE is built on top of VS Code, so VS Code shortcuts work the same way.
 - [x] Chapter 07 — Control Flow (if/else)
 - [x] Chapter 08 — Switch Statement
 - [x] Chapter 09 — User Input (browser prompt, readline, prompt-sync)
-- [x] Chapter 11 — Arrays (Basics)
-- [ ] Chapter 10 — Loops (for, while, do-while)
+- [x] Chapter 10 — Loops (for, while, do-while, continue, break)
+- [x] Chapter 11 — Arrays (access, add/remove, search, map/filter/reduce)
+- [x] All_Task — Practice mini programs
 - [ ] Chapter 12 — Objects and ES6+ Features
 - [ ] Chapter 13 — Async JavaScript (Promises, async/await)
 - [ ] Chapter 14 — Playwright Setup and First Test
