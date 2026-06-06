@@ -25,8 +25,8 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays)
-- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions)
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions)
+- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread operator)
 - Playwright automation framework for end-to-end testing of web applications
 
 Each chapter is organized into its own folder with progressively numbered files for easy navigation.
@@ -85,15 +85,21 @@ LearnPlaywright2X/
 │   └── 82_IQ.js
 │
 ├── chapter_11_Arrays/
-│   ├── 83_Arrays.js
-│   ├── 84_Array.js
-│   ├── 85_Access_Array.js
-│   ├── 86_Add_Remove.js
-│   ├── 87_Add_Remove_2.js
-│   ├── 88_realex1.js
-│   ├── 89_searchInArray.js
-│   ├── 90_IterateArray.js
-│   └── 91_IQ.js
+│   ├── 83_Arrays.js … 91_IQ.js
+│   ├── 92_Arrays.js
+│   ├── 93_ArraySlice.js
+│   └── 94_conatarray.js
+│
+├── chapter_12_Functions/
+│   ├── 95_FUnctions.js
+│   ├── 96_Function1.js
+│   ├── 97_Function2.js
+│   ├── 98_Function3.js
+│   ├── 99_Function4.js
+│   ├── 100_Function5.js
+│   ├── 101_LiteralFunction.js
+│   ├── 102_FunctionWithExpression.js
+│   └── 103_ArrowFunction.js
 │
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
@@ -275,6 +281,21 @@ npx playwright install
 - **`89_searchInArray.js`** — `indexOf`, `includes`, search in arrays
 - **`90_IterateArray.js`** — `for`, `for...of`, `forEach` iteration
 - **`91_IQ.js`** — `map`, `filter`, `reduce` on arrays
+- **`92_Arrays.js`** — `sort()` default vs numeric sort `(a, b) => a - b`
+- **`93_ArraySlice.js`** — `slice()` — extract portion without modifying original
+- **`94_conatarray.js`** — `concat()`, spread `[...a, ...b]`, spread with objects
+
+### Chapter 12 — Functions
+
+- **`95_FUnctions.js`** — What is a function; all types overview (declaration, expression, arrow, IIFE, async, generator)
+- **`96_Function1.js`** — Function declaration, expression, named expression
+- **`97_Function2.js`** — Type 1: no parameters, no return value
+- **`98_Function3.js`** — Type 2: no parameters, with return value
+- **`99_Function4.js`** — Type 3: with parameters, no return value
+- **`100_Function5.js`** — Type 4: with parameters and return value
+- **`101_LiteralFunction.js`** — Functions with parameters, return, assign to variables
+- **`102_FunctionWithExpression.js`** — Function stored in a variable (expression)
+- **`103_ArrowFunction.js`** — Arrow functions (`=>`), implicit return
 
 ---
 
@@ -304,6 +325,10 @@ node chapter_07_Statement/58_LeapYear.js
 node chapter_08_SwitchStatement/59_switch.js
 node chapter_10_Loops/77_dowhileloop.js
 node chapter_11_Arrays/91_IQ.js
+node chapter_11_Arrays/92_Arrays.js
+node chapter_11_Arrays/94_conatarray.js
+node chapter_12_Functions/95_FUnctions.js
+node chapter_12_Functions/103_ArrowFunction.js
 ```
 
 **User input with prompt-sync:**
@@ -369,15 +394,16 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 08 — Switch Statement
 - [x] Chapter 09 — User Input (browser prompt, readline, prompt-sync)
 - [x] Chapter 10 — Loops (for, while, do-while, continue, break)
-- [x] Chapter 11 — Arrays (access, add/remove, search, map/filter/reduce)
+- [x] Chapter 11 — Arrays (access, add/remove, search, sort, slice, concat, map/filter/reduce)
+- [x] Chapter 12 — Functions (declaration, expression, arrow, parameters, return)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 12 — Objects and ES6+ Features
-- [ ] Chapter 13 — Async JavaScript (Promises, async/await)
-- [ ] Chapter 14 — Playwright Setup and First Test
-- [ ] Chapter 15 — Locators and Actions
-- [ ] Chapter 16 — Assertions and Test Hooks
-- [ ] Chapter 17 — Page Object Model (POM)
-- [ ] Chapter 18 — CI/CD Integration
+- [ ] Chapter 13 — Objects and ES6+ Features
+- [ ] Chapter 14 — Async JavaScript (Promises, async/await)
+- [ ] Chapter 15 — Playwright Setup and First Test
+- [ ] Chapter 16 — Locators and Actions
+- [ ] Chapter 17 — Assertions and Test Hooks
+- [ ] Chapter 18 — Page Object Model (POM)
+- [ ] Chapter 19 — CI/CD Integration
 
 ---
 
