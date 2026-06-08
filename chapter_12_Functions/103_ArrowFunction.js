@@ -12,3 +12,18 @@ console.log(doubltIt(10));
 const printIt = (name) => console.log(name);
 printIt("Vishwajit");
 //output: Vishwajit
+
+const printIt2 = () => console.log("Hello");
+printIt2();
+
+const printIt3 = () => "HELLO";
+console.log(printIt3());
+
+const printIt4 = (name) => {
+  const message = `Hello ${name}`;
+  return message;
+};
+console.log(printIt4("Vishwajit"));
+//output: Hello Vishwajit
+
+//when arroww function has multiple lines, we need to use return statement
