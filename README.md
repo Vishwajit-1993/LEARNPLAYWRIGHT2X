@@ -25,8 +25,8 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions)
-- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread operator)
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions, strings)
+- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread/rest, closures)
 - Playwright automation framework for end-to-end testing of web applications
 
 Each chapter is organized into its own folder with progressively numbered files for easy navigation.
@@ -91,15 +91,32 @@ LearnPlaywright2X/
 │   └── 94_conatarray.js
 │
 ├── chapter_12_Functions/
-│   ├── 95_FUnctions.js
-│   ├── 96_Function1.js
-│   ├── 97_Function2.js
-│   ├── 98_Function3.js
-│   ├── 99_Function4.js
-│   ├── 100_Function5.js
-│   ├── 101_LiteralFunction.js
-│   ├── 102_FunctionWithExpression.js
-│   └── 103_ArrowFunction.js
+│   ├── 95_FUnctions.js … 103_ArrowFunction.js
+│   ├── 104_ArrowFUnction1.js
+│   ├── 105_ArrowFUnction2.js
+│   ├── 106_Default_Param_Fn.js
+│   ├── 107_IQ.js
+│   ├── 108_Rest_Param.js
+│   ├── 109_IQ.js
+│   ├── 110_spread_IQ.js
+│   ├── 111.Iq.js
+│   ├── 112.IQ.js
+│   ├── 113_closuerinfunction.js
+│   ├── 114_closure.js
+│   ├── 115_API_Real.js
+│   ├── 116_HigherOrderFun.js
+│   └── 117_PureFunction.js
+│
+├── chapter_13_String/
+│   ├── 119_String1.js
+│   ├── 120_StringSearch.js
+│   ├── 121_Substring.js
+│   ├── 122_Transform_str.js
+│   ├── 123_stringConversion.js
+│   ├── 124_IQ1.js
+│   ├── 125_IQ2.js
+│   ├── 188_String.js
+│   └── String_CheatSheet.md
 │
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
@@ -296,6 +313,32 @@ npx playwright install
 - **`101_LiteralFunction.js`** — Functions with parameters, return, assign to variables
 - **`102_FunctionWithExpression.js`** — Function stored in a variable (expression)
 - **`103_ArrowFunction.js`** — Arrow functions (`=>`), implicit return
+- **`104_ArrowFUnction1.js`** — Declaration vs arrow vs ternary (status code validation)
+- **`105_ArrowFUnction2.js`** — IIFE and arrow function examples
+- **`106_Default_Param_Fn.js`** — Default parameter values
+- **`107_IQ.js`** — Function practice questions
+- **`108_Rest_Param.js`** — Rest parameter (`...args`), sum example
+- **`109_IQ.js`** — Hoisting: declaration vs `const` expression
+- **`110_spread_IQ.js`** — Spread operator (`...`) with functions and arrays
+- **`111.Iq.js`** — Function scope vs global scope
+- **`112.IQ.js`** — Nested functions and recursion
+- **`113_closuerinfunction.js`** — Closure basics with counter example
+- **`114_closure.js`** — Closure with object methods (increment/decrement)
+- **`115_API_Real.js`** — Real-world closure — retry tracker for tests
+- **`116_HigherOrderFun.js`** — Higher-order functions (function as argument)
+- **`117_PureFunction.js`** — Pure vs impure functions
+
+### Chapter 13 — Strings
+
+- **`119_String1.js`** — `length`, `[index]`, `at()`, `charAt()`, case change
+- **`120_StringSearch.js`** — `includes`, `startsWith`, `endsWith`, `indexOf`, `search`
+- **`121_Substring.js`** — `substring()` extract part of a string
+- **`122_Transform_str.js`** — `trim`, `replace`, `replaceAll`, `concat`, `split`, `join`
+- **`123_stringConversion.js`** — String ↔ number (`Number`, `parseInt`, `parseFloat`, `toString`)
+- **`124_IQ1.js`** — Palindrome check
+- **`125_IQ2.js`** — Anagram check (clean, sort, compare)
+- **`188_String.js`** — String creation, template literals, string overview
+- **`String_CheatSheet.md`** — All string methods with one-line examples
 
 ---
 
@@ -328,8 +371,16 @@ node chapter_11_Arrays/91_IQ.js
 node chapter_11_Arrays/92_Arrays.js
 node chapter_11_Arrays/94_conatarray.js
 node chapter_12_Functions/95_FUnctions.js
-node chapter_12_Functions/103_ArrowFunction.js
+node chapter_12_Functions/104_ArrowFUnction1.js
+node chapter_12_Functions/108_Rest_Param.js
+node chapter_12_Functions/113_closuerinfunction.js
+node chapter_12_Functions/117_PureFunction.js
+node chapter_13_String/119_String1.js
+node chapter_13_String/120_StringSearch.js
+node chapter_13_String/125_IQ2.js
 ```
+
+**String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
 
 **User input with prompt-sync:**
 
@@ -395,15 +446,16 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 09 — User Input (browser prompt, readline, prompt-sync)
 - [x] Chapter 10 — Loops (for, while, do-while, continue, break)
 - [x] Chapter 11 — Arrays (access, add/remove, search, sort, slice, concat, map/filter/reduce)
-- [x] Chapter 12 — Functions (declaration, expression, arrow, parameters, return)
+- [x] Chapter 12 — Functions (declaration, arrow, default/rest/spread, closure, HOF, pure functions)
+- [x] Chapter 13 — Strings (search, transform, conversion, palindrome, anagram)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 13 — Objects and ES6+ Features
-- [ ] Chapter 14 — Async JavaScript (Promises, async/await)
-- [ ] Chapter 15 — Playwright Setup and First Test
-- [ ] Chapter 16 — Locators and Actions
-- [ ] Chapter 17 — Assertions and Test Hooks
-- [ ] Chapter 18 — Page Object Model (POM)
-- [ ] Chapter 19 — CI/CD Integration
+- [ ] Chapter 14 — Objects and ES6+ Features
+- [ ] Chapter 15 — Async JavaScript (Promises, async/await)
+- [ ] Chapter 16 — Playwright Setup and First Test
+- [ ] Chapter 17 — Locators and Actions
+- [ ] Chapter 18 — Assertions and Test Hooks
+- [ ] Chapter 19 — Page Object Model (POM)
+- [ ] Chapter 20 — CI/CD Integration
 
 ---
 
