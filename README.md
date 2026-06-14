@@ -25,8 +25,8 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions, strings)
-- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread/rest, closures)
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions, strings, objects)
+- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread/rest, closures, destructuring, getters/setters)
 - Playwright automation framework for end-to-end testing of web applications
 
 Each chapter is organized into its own folder with progressively numbered files for easy navigation.
@@ -117,6 +117,22 @@ LearnPlaywright2X/
 │   ├── 125_IQ2.js
 │   ├── 188_String.js
 │   └── String_CheatSheet.md
+│
+├── chapter_14_Objects/
+│   ├── 124_Objects.js
+│   ├── 125_obj.js
+│   ├── 126_objects_creation.js
+│   ├── 127_Objects_real.js
+│   ├── 128_privsref.js
+│   ├── 129_ObjExample.js
+│   ├── 130_IQ1.js
+│   ├── 131_Objects_Function.js
+│   ├── 132_Obj_Decons.js
+│   ├── 133_Spread.js
+│   ├── 134_getsetinObjects.js
+│   ├── 135_IQ.js
+│   ├── 136_IQ.js
+│   └── 137_Let_Const_Obj.js
 │
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
@@ -340,6 +356,23 @@ npx playwright install
 - **`188_String.js`** — String creation, template literals, string overview
 - **`String_CheatSheet.md`** — All string methods with one-line examples
 
+### Chapter 14 — Objects
+
+- **`124_Objects.js`** — Objects intro (key-value pairs, properties)
+- **`125_obj.js`** — Object basics and property access
+- **`126_objects_creation.js`** — Ways to create objects (`{}`, `new Object()`)
+- **`127_Objects_real.js`** — Real-world object example
+- **`128_privsref.js`** — Primitive vs reference (copy by value vs reference)
+- **`129_ObjExample.js`** — Object property examples
+- **`130_IQ1.js`** — Object practice questions
+- **`131_Objects_Function.js`** — Methods inside objects (`this`, `greet()`)
+- **`132_Obj_Decons.js`** — Object destructuring
+- **`133_Spread.js`** — Spread operator with objects (`{ ...obj1, ...obj2 }`)
+- **`134_getsetinObjects.js`** — Getters and setters (`get`, `set`)
+- **`135_IQ.js`** — Object IQ practice
+- **`136_IQ.js`** — Object IQ practice
+- **`137_Let_Const_Obj.js`** — `let` vs `const` with objects (reassign vs mutate)
+
 ---
 
 ## Practice Tasks (All_Task)
@@ -378,6 +411,9 @@ node chapter_12_Functions/117_PureFunction.js
 node chapter_13_String/119_String1.js
 node chapter_13_String/120_StringSearch.js
 node chapter_13_String/125_IQ2.js
+node chapter_14_Objects/128_privsref.js
+node chapter_14_Objects/131_Objects_Function.js
+node chapter_14_Objects/134_getsetinObjects.js
 ```
 
 **String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
@@ -448,8 +484,8 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 11 — Arrays (access, add/remove, search, sort, slice, concat, map/filter/reduce)
 - [x] Chapter 12 — Functions (declaration, arrow, default/rest/spread, closure, HOF, pure functions)
 - [x] Chapter 13 — Strings (search, transform, conversion, palindrome, anagram)
+- [x] Chapter 14 — Objects (creation, methods, destructuring, spread, get/set, primitive vs reference)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 14 — Objects and ES6+ Features
 - [ ] Chapter 15 — Async JavaScript (Promises, async/await)
 - [ ] Chapter 16 — Playwright Setup and First Test
 - [ ] Chapter 17 — Locators and Actions
