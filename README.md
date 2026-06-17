@@ -25,7 +25,7 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions, strings, objects)
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, 2D arrays, functions, strings, objects)
 - Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread/rest, closures, destructuring, getters/setters)
 - Playwright automation framework for end-to-end testing of web applications
 
@@ -134,6 +134,14 @@ LearnPlaywright2X/
 │   ├── 136_IQ.js
 │   └── 137_Let_Const_Obj.js
 │
+├── chapter_15_2DArray/
+│   ├── 138_2D_array.js
+│   ├── 139_IQ.js
+│   ├── 140_IQ.js
+│   ├── 141_2D_ArrayFun.js
+│   ├── 142_IQ.js
+│   └── testdata.md
+│
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
 │   ├── BuildHealthReporter.js
@@ -141,7 +149,8 @@ LearnPlaywright2X/
 │   ├── HTTP Status Code Categorizer.js
 │   ├── Login Lockout.js
 │   ├── Test Case Pass/Fail Verdict.js
-│   └── Triangle _Classifier.js
+│   ├── Triangle _Classifier.js
+│   └── pirymid.js
 │
 ├── git.md
 └── README.md
@@ -373,6 +382,15 @@ npx playwright install
 - **`136_IQ.js`** — Object IQ practice
 - **`137_Let_Const_Obj.js`** — `let` vs `const` with objects (reassign vs mutate)
 
+### Chapter 15 — 2D Arrays
+
+- **`138_2D_array.js`** — 2D array intro, nested `for` loops (`grid[i][j]`)
+- **`139_IQ.js`** — Row/column length, access elements `grid[0][2]`
+- **`140_IQ.js`** — Test matrix (automation), `forEach` nested loops, `process.stdout.write`
+- **`141_2D_ArrayFun.js`** — `map` + `reduce` on rows, find failed test cases in suites
+- **`142_IQ.js`** — Star pyramid pattern with nested loops
+- **`testdata.md`** — Sample CSV-style test data (username, password, expected)
+
 ---
 
 ## Practice Tasks (All_Task)
@@ -388,6 +406,7 @@ Real-world mini programs combining if/else, loops, and operators:
 | **`Login Lockout.js`** | Login attempt / account lock logic |
 | **`Test Case Pass/Fail Verdict.js`** | Pass/fail verdict from expected vs actual |
 | **`Triangle _Classifier.js`** | Classify triangle type by sides |
+| **`pirymid.js`** | Reverse star pyramid pattern |
 
 ---
 
@@ -414,6 +433,9 @@ node chapter_13_String/125_IQ2.js
 node chapter_14_Objects/128_privsref.js
 node chapter_14_Objects/131_Objects_Function.js
 node chapter_14_Objects/134_getsetinObjects.js
+node chapter_15_2DArray/138_2D_array.js
+node chapter_15_2DArray/140_IQ.js
+node chapter_15_2DArray/141_2D_ArrayFun.js
 ```
 
 **String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
@@ -431,6 +453,7 @@ node chapter_09_UserInput/70_PromptSync.js
 node "All_Task/FizzBuzz Test.js"
 node "All_Task/BuildHealthReporter.js"
 node "All_Task/HTTP Status Code Categorizer.js"
+node "All_Task/pirymid.js"
 ```
 
 **Browser-only:**
@@ -485,13 +508,14 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 12 — Functions (declaration, arrow, default/rest/spread, closure, HOF, pure functions)
 - [x] Chapter 13 — Strings (search, transform, conversion, palindrome, anagram)
 - [x] Chapter 14 — Objects (creation, methods, destructuring, spread, get/set, primitive vs reference)
+- [x] Chapter 15 — 2D Arrays (nested loops, test matrix, map/reduce on rows)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 15 — Async JavaScript (Promises, async/await)
-- [ ] Chapter 16 — Playwright Setup and First Test
-- [ ] Chapter 17 — Locators and Actions
-- [ ] Chapter 18 — Assertions and Test Hooks
-- [ ] Chapter 19 — Page Object Model (POM)
-- [ ] Chapter 20 — CI/CD Integration
+- [ ] Chapter 16 — Async JavaScript (Promises, async/await)
+- [ ] Chapter 17 — Playwright Setup and First Test
+- [ ] Chapter 18 — Locators and Actions
+- [ ] Chapter 19 — Assertions and Test Hooks
+- [ ] Chapter 20 — Page Object Model (POM)
+- [ ] Chapter 21 — CI/CD Integration
 
 ---
 

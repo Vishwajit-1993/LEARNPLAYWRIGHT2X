@@ -13,6 +13,7 @@ console.log(Object.entries(user));
 console.log(user.hasOwnProperty("name"));
 
 //iterate over an object
+//used in automaion
 for (const key in user) {
   console.log(key, user[key]);
 }
