@@ -142,6 +142,19 @@ LearnPlaywright2X/
 │   ├── 142_IQ.js
 │   └── testdata.md
 │
+├── chapter_16_Callback/
+│   ├── 143_Callback.js
+│   ├── 144_Callback1.js
+│   ├── 145_Callback2.js
+│   ├── 146_JS_CB.js
+│   ├── 147_Sync_Callback.js
+│   ├── 148_Async_CB.js
+│   ├── 149_Hell_Callback.js
+│   ├── 150_AsyncAwait_Callback.js
+│   ├── 151_CB_withParameter.js
+│   ├── 152_CB_Return.js
+│   └── 153_CB_PyramidOfDome.js
+│
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
 │   ├── BuildHealthReporter.js
@@ -391,6 +404,20 @@ npx playwright install
 - **`142_IQ.js`** — Star pyramid pattern with nested loops
 - **`testdata.md`** — Sample CSV-style test data (username, password, expected)
 
+### Chapter 16 — Callbacks & Async JavaScript
+
+- **`143_Callback.js`** — Callback basics (named, anonymous, and arrow function callbacks)
+- **`144_Callback1.js`** — Real-world callback in test framework (`test(name, callback)`)
+- **`145_Callback2.js`** — Callback as used in Playwright-style `test()`
+- **`146_JS_CB.js`** — Asynchronous callback with `setTimeout` and execution order
+- **`147_Sync_Callback.js`** — Synchronous callback with `forEach`
+- **`148_Async_CB.js`** — Async flow: code continues before `setTimeout` callback runs
+- **`149_Hell_Callback.js`** — Callback hell (nested callbacks / Pyramid of Doom)
+- **`150_AsyncAwait_Callback.js`** — Same flow refactored with Promises + `async/await`
+- **`151_CB_withParameter.js`** — Callbacks that take parameters (sync & async)
+- **`152_CB_Return.js`** — Callback that returns a value (`calculate(a, b, operation)`)
+- **`153_CB_PyramidOfDome.js`** — Pyramid of Doom example (make-a-tea steps)
+
 ---
 
 ## Practice Tasks (All_Task)
@@ -436,6 +463,11 @@ node chapter_14_Objects/134_getsetinObjects.js
 node chapter_15_2DArray/138_2D_array.js
 node chapter_15_2DArray/140_IQ.js
 node chapter_15_2DArray/141_2D_ArrayFun.js
+node chapter_16_Callback/143_Callback.js
+node chapter_16_Callback/146_JS_CB.js
+node chapter_16_Callback/149_Hell_Callback.js
+node chapter_16_Callback/150_AsyncAwait_Callback.js
+node chapter_16_Callback/153_CB_PyramidOfDome.js
 ```
 
 **String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
@@ -510,7 +542,7 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 14 — Objects (creation, methods, destructuring, spread, get/set, primitive vs reference)
 - [x] Chapter 15 — 2D Arrays (nested loops, test matrix, map/reduce on rows)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 16 — Async JavaScript (Promises, async/await)
+- [x] Chapter 16 — Callbacks & Async JavaScript (sync/async callbacks, callback hell, async/await)
 - [ ] Chapter 17 — Playwright Setup and First Test
 - [ ] Chapter 18 — Locators and Actions
 - [ ] Chapter 19 — Assertions and Test Hooks
