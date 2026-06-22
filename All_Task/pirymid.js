@@ -4,7 +4,7 @@ function printReversePattern(n) {
 
     for (let j = 1; j <= i; j++) {
       row += "*";
-      console.log(`value of i is ${i} and value of j is ${j}`);
+      //console.log(`value of i is ${i} and value of j is ${j}`);
     }
 
     console.log(row);
@@ -12,4 +12,4 @@ function printReversePattern(n) {
 }
 
 // Call function
-printReversePattern(3);
+printReversePattern(5);

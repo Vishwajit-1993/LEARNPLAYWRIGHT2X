@@ -155,6 +155,17 @@ LearnPlaywright2X/
 │   ├── 152_CB_Return.js
 │   └── 153_CB_PyramidOfDome.js
 │
+├── chapter_17_Promise/
+│   ├── 154_Promise.js
+│   ├── 155_PromiseWithRealExample.js
+│   ├── 156_PromiseWithRealExamplePart2.js
+│   ├── 157_finallly.js
+│   ├── 158_pyramidProblemSolvedByPromise.js
+│   ├── 159_diffBetCBandPromise.js
+│   ├── 160_Promise_All.js
+│   ├── 161_IQ1.js
+│   └── 162_IQ2.js
+│
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
 │   ├── BuildHealthReporter.js
@@ -418,6 +429,18 @@ npx playwright install
 - **`152_CB_Return.js`** — Callback that returns a value (`calculate(a, b, operation)`)
 - **`153_CB_PyramidOfDome.js`** — Pyramid of Doom example (make-a-tea steps)
 
+### Chapter 17 — Promises
+
+- **`154_Promise.js`** — Promise basics (`resolve`/`reject`, `.then`/`.catch`)
+- **`155_PromiseWithRealExample.js`** — Promise simulating an API call with `.then`
+- **`156_PromiseWithRealExamplePart2.js`** — Rejected promise: `.then` skipped, `.catch` runs
+- **`157_finallly.js`** — Full chain: `.then` / `.catch` / `.finally`
+- **`158_pyramidProblemSolvedByPromise.js`** — Callback hell refactored into a flat Promise chain
+- **`159_diffBetCBandPromise.js`** — Callback vs Promise functions compared (with calls)
+- **`160_Promise_All.js`** — `Promise.all` and `Promise.allSettled`
+- **`161_IQ1.js`** — Promise chaining, value passing, and error handling (`throw` → `.catch`)
+- **`162_IQ2.js`** — `Promise.all` vs `Promise.allSettled` practice (status/value/reason)
+
 ---
 
 ## Practice Tasks (All_Task)
@@ -468,6 +491,11 @@ node chapter_16_Callback/146_JS_CB.js
 node chapter_16_Callback/149_Hell_Callback.js
 node chapter_16_Callback/150_AsyncAwait_Callback.js
 node chapter_16_Callback/153_CB_PyramidOfDome.js
+node chapter_17_Promise/154_Promise.js
+node chapter_17_Promise/157_finallly.js
+node chapter_17_Promise/158_pyramidProblemSolvedByPromise.js
+node chapter_17_Promise/160_Promise_All.js
+node chapter_17_Promise/161_IQ1.js
 ```
 
 **String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
@@ -543,11 +571,12 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 15 — 2D Arrays (nested loops, test matrix, map/reduce on rows)
 - [x] All_Task — Practice mini programs
 - [x] Chapter 16 — Callbacks & Async JavaScript (sync/async callbacks, callback hell, async/await)
-- [ ] Chapter 17 — Playwright Setup and First Test
-- [ ] Chapter 18 — Locators and Actions
-- [ ] Chapter 19 — Assertions and Test Hooks
-- [ ] Chapter 20 — Page Object Model (POM)
-- [ ] Chapter 21 — CI/CD Integration
+- [x] Chapter 17 — Promises (`.then`/`.catch`/`.finally`, chaining, `Promise.all`/`allSettled`)
+- [ ] Chapter 18 — Playwright Setup and First Test
+- [ ] Chapter 19 — Locators and Actions
+- [ ] Chapter 20 — Assertions and Test Hooks
+- [ ] Chapter 21 — Page Object Model (POM)
+- [ ] Chapter 22 — CI/CD Integration
 
 ---
 

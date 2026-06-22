@@ -55,6 +55,23 @@ boilWater(function () {
   });
 });
 
+// How this works (step-by-step):
+// 1. boilWater() is called first. It starts a 1s timer and does NOT run the
+//    next step immediately - it waits.
+// 2. After 1s, boilWater prints "Step 1" and calls its callback. That callback
+//    is the function that calls addTeaLeaves().
+// 3. addTeaLeaves() starts its own 1s timer; after it finishes it prints
+//    "Step 2" and calls ITS callback, which triggers addMilk().
+// 4. The same chain continues: addMilk -> addSugar -> serveTea, each waiting
+//    for the previous one to finish before starting (sequential, not parallel).
+// 5. Finally, serveTea's callback prints "Done: Enjoy your tea!".
+//
+// Each function only knows "run my work, then call whatever callback I was
+// given." We control the ORDER by nesting: the callback of one step is the
+// call to the next step. Because every step is async (setTimeout), we MUST
+// nest them to guarantee order - and that nesting is exactly what creates the
+// rightward Pyramid of Doom.
+
 // The deeper the nesting, the harder it becomes to:
 //   - read the order of execution
 //   - handle errors for each step
