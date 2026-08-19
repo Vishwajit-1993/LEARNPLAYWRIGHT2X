@@ -25,8 +25,8 @@ A structured learning repository for mastering **JavaScript fundamentals** and *
 
 This repository is a personal learning journey to become proficient in:
 
-- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, functions)
-- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread operator)
+- Core JavaScript concepts (variables, identifiers, literals, operators, control flow, loops, arrays, 2D arrays, functions, strings, objects)
+- Modern ES6+ features (`map`, `filter`, `reduce`, template literals, arrow functions, spread/rest, closures, destructuring, getters/setters)
 - Playwright automation framework for end-to-end testing of web applications
 
 Each chapter is organized into its own folder with progressively numbered files for easy navigation.
@@ -91,15 +91,98 @@ LearnPlaywright2X/
 │   └── 94_conatarray.js
 │
 ├── chapter_12_Functions/
-│   ├── 95_FUnctions.js
-│   ├── 96_Function1.js
-│   ├── 97_Function2.js
-│   ├── 98_Function3.js
-│   ├── 99_Function4.js
-│   ├── 100_Function5.js
-│   ├── 101_LiteralFunction.js
-│   ├── 102_FunctionWithExpression.js
-│   └── 103_ArrowFunction.js
+│   ├── 95_FUnctions.js … 103_ArrowFunction.js
+│   ├── 104_ArrowFUnction1.js
+│   ├── 105_ArrowFUnction2.js
+│   ├── 106_Default_Param_Fn.js
+│   ├── 107_IQ.js
+│   ├── 108_Rest_Param.js
+│   ├── 109_IQ.js
+│   ├── 110_spread_IQ.js
+│   ├── 111.Iq.js
+│   ├── 112.IQ.js
+│   ├── 113_closuerinfunction.js
+│   ├── 114_closure.js
+│   ├── 115_API_Real.js
+│   ├── 116_HigherOrderFun.js
+│   └── 117_PureFunction.js
+│
+├── chapter_13_String/
+│   ├── 119_String1.js
+│   ├── 120_StringSearch.js
+│   ├── 121_Substring.js
+│   ├── 122_Transform_str.js
+│   ├── 123_stringConversion.js
+│   ├── 124_IQ1.js
+│   ├── 125_IQ2.js
+│   ├── 188_String.js
+│   └── String_CheatSheet.md
+│
+├── chapter_14_Objects/
+│   ├── 124_Objects.js
+│   ├── 125_obj.js
+│   ├── 126_objects_creation.js
+│   ├── 127_Objects_real.js
+│   ├── 128_privsref.js
+│   ├── 129_ObjExample.js
+│   ├── 130_IQ1.js
+│   ├── 131_Objects_Function.js
+│   ├── 132_Obj_Decons.js
+│   ├── 133_Spread.js
+│   ├── 134_getsetinObjects.js
+│   ├── 135_IQ.js
+│   ├── 136_IQ.js
+│   └── 137_Let_Const_Obj.js
+│
+├── chapter_15_2DArray/
+│   ├── 138_2D_array.js
+│   ├── 139_IQ.js
+│   ├── 140_IQ.js
+│   ├── 141_2D_ArrayFun.js
+│   ├── 142_IQ.js
+│   └── testdata.md
+│
+├── chapter_16_Callback/
+│   ├── 143_Callback.js
+│   ├── 144_Callback1.js
+│   ├── 145_Callback2.js
+│   ├── 146_JS_CB.js
+│   ├── 147_Sync_Callback.js
+│   ├── 148_Async_CB.js
+│   ├── 149_Hell_Callback.js
+│   ├── 150_AsyncAwait_Callback.js
+│   ├── 151_CB_withParameter.js
+│   ├── 152_CB_Return.js
+│   └── 153_CB_PyramidOfDome.js
+│
+├── chapter_17_Promise/
+│   ├── 154_Promise.js
+│   ├── 155_PromiseWithRealExample.js
+│   ├── 156_PromiseWithRealExamplePart2.js
+│   ├── 157_finallly.js
+│   ├── 158_pyramidProblemSolvedByPromise.js
+│   ├── 159_diffBetCBandPromise.js
+│   ├── 160_Promise_All.js
+│   ├── 161_IQ1.js
+│   └── 162_IQ2.js
+│
+├── chapter_18_Async/
+│   ├── 163_Async.js
+│   ├── 164_Async_P2.js
+│   ├── 165_PyODom.js
+│   ├── 166_AsyncEx.js
+│   ├── 167_AsyncAwait.js
+│   ├── 168_AsyncAwaitParallel.js
+│   └── 169_IQ.js
+│
+├── chapter_19_playwright/
+│   ├── tests/
+│   │   ├── example.spec.ts
+│   │   └── tta-card.spec.ts
+│   ├── .github/workflows/playwright.yml
+│   ├── playwright.config.ts
+│   ├── package.json
+│   └── .gitignore
 │
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
@@ -108,7 +191,8 @@ LearnPlaywright2X/
 │   ├── HTTP Status Code Categorizer.js
 │   ├── Login Lockout.js
 │   ├── Test Case Pass/Fail Verdict.js
-│   └── Triangle _Classifier.js
+│   ├── Triangle _Classifier.js
+│   └── pirymid.js
 │
 ├── git.md
 └── README.md
@@ -296,6 +380,103 @@ npx playwright install
 - **`101_LiteralFunction.js`** — Functions with parameters, return, assign to variables
 - **`102_FunctionWithExpression.js`** — Function stored in a variable (expression)
 - **`103_ArrowFunction.js`** — Arrow functions (`=>`), implicit return
+- **`104_ArrowFUnction1.js`** — Declaration vs arrow vs ternary (status code validation)
+- **`105_ArrowFUnction2.js`** — IIFE and arrow function examples
+- **`106_Default_Param_Fn.js`** — Default parameter values
+- **`107_IQ.js`** — Function practice questions
+- **`108_Rest_Param.js`** — Rest parameter (`...args`), sum example
+- **`109_IQ.js`** — Hoisting: declaration vs `const` expression
+- **`110_spread_IQ.js`** — Spread operator (`...`) with functions and arrays
+- **`111.Iq.js`** — Function scope vs global scope
+- **`112.IQ.js`** — Nested functions and recursion
+- **`113_closuerinfunction.js`** — Closure basics with counter example
+- **`114_closure.js`** — Closure with object methods (increment/decrement)
+- **`115_API_Real.js`** — Real-world closure — retry tracker for tests
+- **`116_HigherOrderFun.js`** — Higher-order functions (function as argument)
+- **`117_PureFunction.js`** — Pure vs impure functions
+
+### Chapter 13 — Strings
+
+- **`119_String1.js`** — `length`, `[index]`, `at()`, `charAt()`, case change
+- **`120_StringSearch.js`** — `includes`, `startsWith`, `endsWith`, `indexOf`, `search`
+- **`121_Substring.js`** — `substring()` extract part of a string
+- **`122_Transform_str.js`** — `trim`, `replace`, `replaceAll`, `concat`, `split`, `join`
+- **`123_stringConversion.js`** — String ↔ number (`Number`, `parseInt`, `parseFloat`, `toString`)
+- **`124_IQ1.js`** — Palindrome check
+- **`125_IQ2.js`** — Anagram check (clean, sort, compare)
+- **`188_String.js`** — String creation, template literals, string overview
+- **`String_CheatSheet.md`** — All string methods with one-line examples
+
+### Chapter 14 — Objects
+
+- **`124_Objects.js`** — Objects intro (key-value pairs, properties)
+- **`125_obj.js`** — Object basics and property access
+- **`126_objects_creation.js`** — Ways to create objects (`{}`, `new Object()`)
+- **`127_Objects_real.js`** — Real-world object example
+- **`128_privsref.js`** — Primitive vs reference (copy by value vs reference)
+- **`129_ObjExample.js`** — Object property examples
+- **`130_IQ1.js`** — Object practice questions
+- **`131_Objects_Function.js`** — Methods inside objects (`this`, `greet()`)
+- **`132_Obj_Decons.js`** — Object destructuring
+- **`133_Spread.js`** — Spread operator with objects (`{ ...obj1, ...obj2 }`)
+- **`134_getsetinObjects.js`** — Getters and setters (`get`, `set`)
+- **`135_IQ.js`** — Object IQ practice
+- **`136_IQ.js`** — Object IQ practice
+- **`137_Let_Const_Obj.js`** — `let` vs `const` with objects (reassign vs mutate)
+
+### Chapter 15 — 2D Arrays
+
+- **`138_2D_array.js`** — 2D array intro, nested `for` loops (`grid[i][j]`)
+- **`139_IQ.js`** — Row/column length, access elements `grid[0][2]`
+- **`140_IQ.js`** — Test matrix (automation), `forEach` nested loops, `process.stdout.write`
+- **`141_2D_ArrayFun.js`** — `map` + `reduce` on rows, find failed test cases in suites
+- **`142_IQ.js`** — Star pyramid pattern with nested loops
+- **`testdata.md`** — Sample CSV-style test data (username, password, expected)
+
+### Chapter 16 — Callbacks & Async JavaScript
+
+- **`143_Callback.js`** — Callback basics (named, anonymous, and arrow function callbacks)
+- **`144_Callback1.js`** — Real-world callback in test framework (`test(name, callback)`)
+- **`145_Callback2.js`** — Callback as used in Playwright-style `test()`
+- **`146_JS_CB.js`** — Asynchronous callback with `setTimeout` and execution order
+- **`147_Sync_Callback.js`** — Synchronous callback with `forEach`
+- **`148_Async_CB.js`** — Async flow: code continues before `setTimeout` callback runs
+- **`149_Hell_Callback.js`** — Callback hell (nested callbacks / Pyramid of Doom)
+- **`150_AsyncAwait_Callback.js`** — Same flow refactored with Promises + `async/await`
+- **`151_CB_withParameter.js`** — Callbacks that take parameters (sync & async)
+- **`152_CB_Return.js`** — Callback that returns a value (`calculate(a, b, operation)`)
+- **`153_CB_PyramidOfDome.js`** — Pyramid of Doom example (make-a-tea steps)
+
+### Chapter 17 — Promises
+
+- **`154_Promise.js`** — Promise basics (`resolve`/`reject`, `.then`/`.catch`)
+- **`155_PromiseWithRealExample.js`** — Promise simulating an API call with `.then`
+- **`156_PromiseWithRealExamplePart2.js`** — Rejected promise: `.then` skipped, `.catch` runs
+- **`157_finallly.js`** — Full chain: `.then` / `.catch` / `.finally`
+- **`158_pyramidProblemSolvedByPromise.js`** — Callback hell refactored into a flat Promise chain
+- **`159_diffBetCBandPromise.js`** — Callback vs Promise functions compared (with calls)
+- **`160_Promise_All.js`** — `Promise.all` and `Promise.allSettled`
+- **`161_IQ1.js`** — Promise chaining, value passing, and error handling (`throw` → `.catch`)
+- **`162_IQ2.js`** — `Promise.all` vs `Promise.allSettled` practice (status/value/reason)
+
+### Chapter 18 — Async / Await
+
+- **`163_Async.js`** — `async`/`await` with `try` / `catch` / `finally` on a rejected promise
+- **`164_Async_P2.js`** — `await` unwraps a resolved promise value (vs getting a Promise object)
+- **`165_PyODom.js`** — E2E login flow modeled as sequential `await` steps (Pyramid of Doom refactor)
+- **`166_AsyncEx.js`** — An `async` function always returns a Promise (consumed with `.then`)
+- **`167_AsyncAwait.js`** — Sequential API calls with `await` and total time measurement
+- **`168_AsyncAwaitParallel.js`** — Parallel API calls with `await Promise.all([...])`
+- **`169_IQ.js`** — Async practice: chaining awaited steps in a test flow
+
+### Chapter 19 — Playwright
+
+First real end-to-end tests using the Playwright test runner.
+
+- **`tests/example.spec.ts`** — Starter tests (page title + "Get started" navigation on playwright.dev)
+- **`tests/tta-card.spec.ts`** — TTACart login test (`locator`, `fill`, `click`, `expect().toBeVisible()`)
+- **`playwright.config.ts`** — Playwright configuration (projects, reporters, base settings)
+- **`.github/workflows/playwright.yml`** — GitHub Actions CI workflow to run tests
 
 ---
 
@@ -312,6 +493,7 @@ Real-world mini programs combining if/else, loops, and operators:
 | **`Login Lockout.js`** | Login attempt / account lock logic |
 | **`Test Case Pass/Fail Verdict.js`** | Pass/fail verdict from expected vs actual |
 | **`Triangle _Classifier.js`** | Classify triangle type by sides |
+| **`pirymid.js`** | Reverse star pyramid pattern |
 
 ---
 
@@ -328,8 +510,32 @@ node chapter_11_Arrays/91_IQ.js
 node chapter_11_Arrays/92_Arrays.js
 node chapter_11_Arrays/94_conatarray.js
 node chapter_12_Functions/95_FUnctions.js
-node chapter_12_Functions/103_ArrowFunction.js
+node chapter_12_Functions/104_ArrowFUnction1.js
+node chapter_12_Functions/108_Rest_Param.js
+node chapter_12_Functions/113_closuerinfunction.js
+node chapter_12_Functions/117_PureFunction.js
+node chapter_13_String/119_String1.js
+node chapter_13_String/120_StringSearch.js
+node chapter_13_String/125_IQ2.js
+node chapter_14_Objects/128_privsref.js
+node chapter_14_Objects/131_Objects_Function.js
+node chapter_14_Objects/134_getsetinObjects.js
+node chapter_15_2DArray/138_2D_array.js
+node chapter_15_2DArray/140_IQ.js
+node chapter_15_2DArray/141_2D_ArrayFun.js
+node chapter_16_Callback/143_Callback.js
+node chapter_16_Callback/146_JS_CB.js
+node chapter_16_Callback/149_Hell_Callback.js
+node chapter_16_Callback/150_AsyncAwait_Callback.js
+node chapter_16_Callback/153_CB_PyramidOfDome.js
+node chapter_17_Promise/154_Promise.js
+node chapter_17_Promise/157_finallly.js
+node chapter_17_Promise/158_pyramidProblemSolvedByPromise.js
+node chapter_17_Promise/160_Promise_All.js
+node chapter_17_Promise/161_IQ1.js
 ```
+
+**String cheat sheet:** see [`chapter_13_String/String_CheatSheet.md`](chapter_13_String/String_CheatSheet.md)
 
 **User input with prompt-sync:**
 
@@ -344,6 +550,29 @@ node chapter_09_UserInput/70_PromptSync.js
 node "All_Task/FizzBuzz Test.js"
 node "All_Task/BuildHealthReporter.js"
 node "All_Task/HTTP Status Code Categorizer.js"
+node "All_Task/pirymid.js"
+```
+
+**Async / await (Chapter 18):**
+
+```bash
+node chapter_18_Async/164_Async_P2.js
+node chapter_18_Async/167_AsyncAwait.js
+node chapter_18_Async/168_AsyncAwaitParallel.js
+```
+
+**Playwright tests (Chapter 19):**
+
+> Playwright `.spec.ts` files are run with the Playwright **test runner**, not with `node`.
+
+```bash
+cd chapter_19_playwright
+npm install
+npx playwright install
+npx playwright test              # run all tests (headless)
+npx playwright test --headed     # watch tests run in a browser
+npx playwright test tests/tta-card.spec.ts
+npx playwright show-report       # open the HTML report
 ```
 
 **Browser-only:**
@@ -395,15 +624,18 @@ git push -u origin feature/your-branch-name
 - [x] Chapter 09 — User Input (browser prompt, readline, prompt-sync)
 - [x] Chapter 10 — Loops (for, while, do-while, continue, break)
 - [x] Chapter 11 — Arrays (access, add/remove, search, sort, slice, concat, map/filter/reduce)
-- [x] Chapter 12 — Functions (declaration, expression, arrow, parameters, return)
+- [x] Chapter 12 — Functions (declaration, arrow, default/rest/spread, closure, HOF, pure functions)
+- [x] Chapter 13 — Strings (search, transform, conversion, palindrome, anagram)
+- [x] Chapter 14 — Objects (creation, methods, destructuring, spread, get/set, primitive vs reference)
+- [x] Chapter 15 — 2D Arrays (nested loops, test matrix, map/reduce on rows)
 - [x] All_Task — Practice mini programs
-- [ ] Chapter 13 — Objects and ES6+ Features
-- [ ] Chapter 14 — Async JavaScript (Promises, async/await)
-- [ ] Chapter 15 — Playwright Setup and First Test
-- [ ] Chapter 16 — Locators and Actions
-- [ ] Chapter 17 — Assertions and Test Hooks
-- [ ] Chapter 18 — Page Object Model (POM)
-- [ ] Chapter 19 — CI/CD Integration
+- [x] Chapter 16 — Callbacks & Async JavaScript (sync/async callbacks, callback hell, async/await)
+- [x] Chapter 17 — Promises (`.then`/`.catch`/`.finally`, chaining, `Promise.all`/`allSettled`)
+- [x] Chapter 18 — Async / Await (try/catch/finally, sequential vs parallel `await`)
+- [x] Chapter 19 — Playwright Setup and First Tests (test runner, locators, assertions, CI)
+- [ ] Chapter 20 — Assertions and Test Hooks
+- [ ] Chapter 21 — Page Object Model (POM)
+- [ ] Chapter 22 — CI/CD Integration
 
 ---
 
