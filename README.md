@@ -166,6 +166,24 @@ LearnPlaywright2X/
 │   ├── 161_IQ1.js
 │   └── 162_IQ2.js
 │
+├── chapter_18_Async/
+│   ├── 163_Async.js
+│   ├── 164_Async_P2.js
+│   ├── 165_PyODom.js
+│   ├── 166_AsyncEx.js
+│   ├── 167_AsyncAwait.js
+│   ├── 168_AsyncAwaitParallel.js
+│   └── 169_IQ.js
+│
+├── chapter_19_playwright/
+│   ├── tests/
+│   │   ├── example.spec.ts
+│   │   └── tta-card.spec.ts
+│   ├── .github/workflows/playwright.yml
+│   ├── playwright.config.ts
+│   ├── package.json
+│   └── .gitignore
+│
 ├── All_Task/
 │   ├── BugSeverityClassifier.js
 │   ├── BuildHealthReporter.js
@@ -441,6 +459,25 @@ npx playwright install
 - **`161_IQ1.js`** — Promise chaining, value passing, and error handling (`throw` → `.catch`)
 - **`162_IQ2.js`** — `Promise.all` vs `Promise.allSettled` practice (status/value/reason)
 
+### Chapter 18 — Async / Await
+
+- **`163_Async.js`** — `async`/`await` with `try` / `catch` / `finally` on a rejected promise
+- **`164_Async_P2.js`** — `await` unwraps a resolved promise value (vs getting a Promise object)
+- **`165_PyODom.js`** — E2E login flow modeled as sequential `await` steps (Pyramid of Doom refactor)
+- **`166_AsyncEx.js`** — An `async` function always returns a Promise (consumed with `.then`)
+- **`167_AsyncAwait.js`** — Sequential API calls with `await` and total time measurement
+- **`168_AsyncAwaitParallel.js`** — Parallel API calls with `await Promise.all([...])`
+- **`169_IQ.js`** — Async practice: chaining awaited steps in a test flow
+
+### Chapter 19 — Playwright
+
+First real end-to-end tests using the Playwright test runner.
+
+- **`tests/example.spec.ts`** — Starter tests (page title + "Get started" navigation on playwright.dev)
+- **`tests/tta-card.spec.ts`** — TTACart login test (`locator`, `fill`, `click`, `expect().toBeVisible()`)
+- **`playwright.config.ts`** — Playwright configuration (projects, reporters, base settings)
+- **`.github/workflows/playwright.yml`** — GitHub Actions CI workflow to run tests
+
 ---
 
 ## Practice Tasks (All_Task)
@@ -516,6 +553,28 @@ node "All_Task/HTTP Status Code Categorizer.js"
 node "All_Task/pirymid.js"
 ```
 
+**Async / await (Chapter 18):**
+
+```bash
+node chapter_18_Async/164_Async_P2.js
+node chapter_18_Async/167_AsyncAwait.js
+node chapter_18_Async/168_AsyncAwaitParallel.js
+```
+
+**Playwright tests (Chapter 19):**
+
+> Playwright `.spec.ts` files are run with the Playwright **test runner**, not with `node`.
+
+```bash
+cd chapter_19_playwright
+npm install
+npx playwright install
+npx playwright test              # run all tests (headless)
+npx playwright test --headed     # watch tests run in a browser
+npx playwright test tests/tta-card.spec.ts
+npx playwright show-report       # open the HTML report
+```
+
 **Browser-only:**
 
 - `68_UserInput.js` — open in browser or use DevTools console (`prompt()`)
@@ -572,8 +631,8 @@ git push -u origin feature/your-branch-name
 - [x] All_Task — Practice mini programs
 - [x] Chapter 16 — Callbacks & Async JavaScript (sync/async callbacks, callback hell, async/await)
 - [x] Chapter 17 — Promises (`.then`/`.catch`/`.finally`, chaining, `Promise.all`/`allSettled`)
-- [ ] Chapter 18 — Playwright Setup and First Test
-- [ ] Chapter 19 — Locators and Actions
+- [x] Chapter 18 — Async / Await (try/catch/finally, sequential vs parallel `await`)
+- [x] Chapter 19 — Playwright Setup and First Tests (test runner, locators, assertions, CI)
 - [ ] Chapter 20 — Assertions and Test Hooks
 - [ ] Chapter 21 — Page Object Model (POM)
 - [ ] Chapter 22 — CI/CD Integration
